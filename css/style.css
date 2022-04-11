@@ -1,36 +1,25 @@
 header {
     background-color: aqua;
 }
-.container_custom {
-    max-width: 800px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+    text-align: center;
 }
 nav ul li {
     display: inline-block;
 }
 #avatar {
     width: 30%;
-    text-align: center;
 }
 .header_hero {
     background-color: green;
 }
-.container_custom img {
-    width: 100%;
+img {
+    max-width: 100%;
 }
 section.about {
     background-color: lightseagreen;
 }
-.btn, footer .container {
-    text-align: center;
-    width: 100%;
-}
-.container > input {
-    width: 100%;
-}
+
 .footer_top {
     background-color: cadetblue;
 }

@@ -12,9 +12,19 @@ header {
 nav ul li {
     display: inline-block;
 }
-.header_hero {
-    color: green;
+#avatar {
+    width: 30%;
+    text-align: center;
+}
+.header_hero, .header_hero > .container_custom {
+    background-color: green;
 }
 .container_custom img {
-    width: 50%;
+    width: 100%;
+}
+section.portfolio > .container_custom {
+    background-color: transparent;
+}
+section.about, section.about > .container_custom {
+    background-color: lightseagreen;
 }

@@ -8,21 +8,22 @@ nav ul li {
     display: inline-block;
 }
 #avatar {
-    width: 30%;
+    width: 40%;
 }
 .header_hero {
     background-color: green;
 }
-img {
+.container img {
     max-width: 100%;
 }
 section.about {
     background-color: lightseagreen;
 }
 
-.footer_top {
-    background-color: cadetblue;
+.container-fluid {
+    text-align: center;
+    background-color: grey;
 }
-.footer_bottom {
-    background-color: darkblue;
+.container-fluid .col {
+    background-color: blue;
 }

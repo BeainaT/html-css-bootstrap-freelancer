@@ -4,7 +4,6 @@ header {
 .container_custom {
     max-width: 800px;
     margin: auto;
-    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,15 +15,25 @@ nav ul li {
     width: 30%;
     text-align: center;
 }
-.header_hero, .header_hero > .container_custom {
+.header_hero {
     background-color: green;
 }
 .container_custom img {
     width: 100%;
 }
-section.portfolio > .container_custom {
-    background-color: transparent;
-}
-section.about, section.about > .container_custom {
+section.about {
     background-color: lightseagreen;
+}
+.btn, footer .container {
+    text-align: center;
+    width: 100%;
+}
+.container > input {
+    width: 100%;
+}
+.footer_top {
+    background-color: cadetblue;
+}
+.footer_bottom {
+    background-color: darkblue;
 }

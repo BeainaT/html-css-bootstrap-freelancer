@@ -1,29 +1,33 @@
-header {
-    background-color: aqua;
+/*TYPO*/
+header, h2 {
+    text-transform: uppercase;
 }
-.container {
+h2, footer {
     text-align: center;
 }
-nav ul li {
-    display: inline-block;
+/*COMMONS*/
+.header_hero, section.about {
+    background-color: #1abc9c;
 }
-#avatar {
-    width: 40%;
-}
-.header_hero {
-    background-color: green;
+.header_top, .footer_bottom {
+    background-color: #2c3e50;
 }
 .container img {
     max-width: 100%;
 }
-section.about {
-    background-color: lightseagreen;
+/*CONTAINERS*/
+.container_custom {
+    width: 60%;
+    margin: auto;
 }
-
-.container-fluid {
-    text-align: center;
-    background-color: grey;
+/*HEADER*/
+nav ul li {
+    display: inline-block;
 }
-.container-fluid .col {
-    background-color: blue;
+#avatar {
+    max-width: 300px;
+}
+/*FOOTER*/
+.footer_top {
+    background-color: #3a546d;
 }

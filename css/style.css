@@ -1,12 +1,17 @@
 /*TYPO*/
-header, h2 {
+header, h2, h3 {
     text-transform: uppercase;
 }
 h2, footer {
     text-align: center;
 }
+footer small, footer address, footer a {
+    text-transform: capitalize;
+}
 /*COMMONS*/
-
+footer {
+    color: #fff;
+}
 .header_hero, section.about, .btn_submit {
     background-color: #1abc9c;
     color: #fff;
@@ -97,4 +102,11 @@ i {
 /*FOOTER*/
 .footer_top {
     background-color: #3a546d;
+}
+.footer_top a {
+    text-decoration: none;
+    color: #1abc9c;
+}
+footer i {
+    color: #fff;
 }

@@ -66,6 +66,12 @@ section.contact ._line, section.portfolio ._line {
 .btn_submit {
     margin-top: 10px;
 }
+i {
+    padding-right: 5px;
+}
+.btn_download {
+    margin-top: 2em;
+}
 /*FOOTER*/
 .footer_top {
     background-color: #3a546d;

@@ -7,7 +7,7 @@ h2, footer {
 }
 /*COMMONS*/
 
-.header_hero, section.about {
+.header_hero, section.about, .btn_submit {
     background-color: #1abc9c;
     color: #fff;
 }
@@ -53,6 +53,18 @@ h2, footer {
 /*MAIN*/
 section.contact ._line, section.portfolio ._line {
     background-color: #000;
+}
+.form-control {
+    border: none;
+    border-radius: unset;
+    border-bottom: 1px solid #cccccc;
+    padding: 0;
+}
+.form-label {
+    margin-bottom: 0;
+}
+.btn_submit {
+    margin-top: 10px;
 }
 /*FOOTER*/
 .footer_top {

@@ -1,5 +1,8 @@
 /*TYPO*/
-header, h2, h3 {
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header, h2, h4 {
     text-transform: uppercase;
 }
 h2, footer {
@@ -9,8 +12,8 @@ footer small, footer address, footer a {
     text-transform: capitalize;
 }
 /*COMMONS*/
-footer {
-    color: #fff;
+a {
+    text-decoration: none;
 }
 .header_hero, section.about, .btn_submit {
     background-color: #1abc9c;
@@ -22,8 +25,22 @@ footer {
 .container img {
     max-width: 100%;
 }
-.layover {
-    display: none;
+._star_ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._star_::before, ._star_::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #fff;
+    display: flex;
+}
+._star_ i {
+    padding: 0 10px;
+    color: inherit;
+    font-size: 1.5em;
 }
 /*CONTAINERS*/
 .container_custom {
@@ -31,82 +48,78 @@ footer {
     margin: auto;
 }
 /*HEADER*/
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff
 }
-.navbar-light .navbar-brand {
-    font-weight: 600;
+.navbar-dark .navbar-brand, .nav-link {
+    font-weight: 700;
 }
 .navbar-collapse {
     flex-grow: 0;
 }
 #avatar {
     max-width: 300px;
-}
-._deco {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    gap: 5px;
-}
-._line {
-    width: 80px;
-    height: 2px;
-    background-color: #fff;
-}
-._star {
-    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 /*MAIN*/
-section.contact ._line, section.portfolio ._line {
+main section:nth-child(odd) ._star_::before, main section:nth-child(odd) ._star_::after {
     background-color: #000;
 }
 .img_box {
     position: relative;
+    overflow: hidden;
 }
-.img_box:hover .layover {
+.img_box img {
+    width: 100%;
+}
+.img_box:hover::before {
+    content: "\2b";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 4em;
+    color: #fff;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(26, 188, 156, 0.8);
-    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.layover > i {
-    font-size: 4em;
-    color: #fff;
+.download_i::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 5px;
 }
 .form-control {
     border: none;
     border-radius: unset;
     border-bottom: 1px solid #cccccc;
-    padding: 0;
-}
-.form-label {
-    margin-bottom: 0;
-}
-.btn_submit {
-    margin-top: 10px;
-}
-i {
-    padding-right: 5px;
-}
-.btn_download {
-    margin-top: 2em;
+    font-size: 12px;
 }
 /*FOOTER*/
+footer {
+    color: #fff;
+}
 .footer_top {
     background-color: #3a546d;
 }
-.footer_top a {
-    text-decoration: none;
+#enjoy_boot {
     color: #1abc9c;
 }
-footer i {
-    color: #fff;
+._social, ._social ul, ._social ul li, li > ._brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+}
+li > ._brand {
+    width: 3em;
+    height: 3em;    
+    border: 1px solid;
+    border-radius: 50%;
 }

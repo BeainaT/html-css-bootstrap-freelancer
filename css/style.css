@@ -2,76 +2,106 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-header, h2, h4 {
+
+header,
+h2,
+h4 {
     text-transform: uppercase;
 }
-h2, footer {
+
+h2,
+footer {
     text-align: center;
 }
-footer small, footer address, footer a {
+
+footer small,
+footer address,
+footer a {
     text-transform: capitalize;
 }
+
 /*COMMONS*/
 a {
     text-decoration: none;
 }
-.header_hero, section.about, .btn_submit {
+
+.header_hero,
+section.about,
+.btn_submit {
     background-color: #1abc9c;
     color: #fff;
 }
-.header_top, .footer_bottom {
+
+.header_top,
+.footer_bottom {
     background-color: #2c3e50;
 }
+
 .container img {
     max-width: 100%;
 }
+
 ._star_ {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-._star_::before, ._star_::after {
+
+._star_::before,
+._star_::after {
     content: "";
     width: 80px;
     height: 3px;
     background-color: #fff;
     display: flex;
 }
+
 ._star_ i {
     padding: 0 10px;
     color: inherit;
     font-size: 1.5em;
 }
+
 /*CONTAINERS*/
 .container_custom {
     width: 60%;
     margin: auto;
 }
+
 /*HEADER*/
 .navbar-dark .navbar-nav .nav-link {
     color: #fff
 }
-.navbar-dark .navbar-brand, .nav-link {
+
+.navbar-dark .navbar-brand,
+.nav-link {
     font-weight: 700;
 }
+
 .navbar-collapse {
     flex-grow: 0;
 }
+
 #avatar {
     max-width: 300px;
     margin-bottom: 1em;
 }
+
 /*MAIN*/
-main section:nth-child(odd) ._star_::before, main section:nth-child(odd) ._star_::after {
+main section:nth-child(odd) ._star_::before,
+main section:nth-child(odd) ._star_::after {
     background-color: #000;
 }
+
 .img_box {
     position: relative;
     overflow: hidden;
 }
+
 .img_box img {
     width: 100%;
 }
+
 .img_box:hover::before {
     content: "\2b";
     font-family: "Font Awesome 6 Free";
@@ -89,37 +119,47 @@ main section:nth-child(odd) ._star_::before, main section:nth-child(odd) ._star_
     align-items: center;
     cursor: pointer;
 }
+
 .download_i::before {
     content: "\f019";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     margin-right: 5px;
 }
+
 .form-control {
     border: none;
     border-radius: unset;
     border-bottom: 1px solid #cccccc;
     font-size: 12px;
 }
+
 /*FOOTER*/
 footer {
     color: #fff;
 }
+
 .footer_top {
     background-color: #3a546d;
 }
+
 #enjoy_boot {
     color: #1abc9c;
 }
-._social, ._social ul, ._social ul li, li > ._brand {
+
+._social,
+._social ul,
+._social ul li,
+li>._brand {
     display: flex;
     justify-content: center;
     align-items: center;
     color: inherit;
 }
-li > ._brand {
+
+li>._brand {
     width: 3em;
-    height: 3em;    
+    height: 3em;
     border: 1px solid;
     border-radius: 50%;
 }
